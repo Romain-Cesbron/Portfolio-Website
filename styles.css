@@ -159,10 +159,15 @@ footer {
 .flex_row{
     display: flex;
     flex-direction: row;
+    
 }
 
 .container_website {
-    max-width: 40%;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .container_website img {
@@ -172,6 +177,13 @@ footer {
     border: 1px solid var(--primary-color);
     background-color: var(--secondary-color);
     border-radius: 8px;
+}
+
+.container_website_text {
+    flex-basis: 60%;
+    flex-shrink: 0;  
+    max-width: 60%;
+
 }
 
 .big_item_off {
