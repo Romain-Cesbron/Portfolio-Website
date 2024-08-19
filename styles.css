@@ -19,6 +19,7 @@ body {
     color: var(--text-color);
 }
 
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -140,6 +141,7 @@ footer {
 .big_item_on {
     border: 1px solid var(--primary-color);
     background-color: var(--secondary-color);
+    border-radius: 8px;
     display: block;
     position: fixed;
     width: 80%;
@@ -148,12 +150,28 @@ footer {
     left: 50%;
     z-index: 1000;
     transform: translate(-50%, -50%);
-    cursor: pointer;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container_website {
+    max-width: 40%;
+}
+
+.container_website img {
+    cursor: pointer;
+    max-width: 350px;
+    object-fit: contain;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
 }
 
 .big_item_off {
