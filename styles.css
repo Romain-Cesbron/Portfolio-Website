@@ -2,12 +2,12 @@
 
 /* Color palette */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #ecf0f1;
-    --background-color: #ffffff;
-    --text-color: #34495e;
-    --accent-color: #3498db;
-    --hover-color: #2980b9;
+    --primary-color: #34495E; /* Grayish-blue */
+    --secondary-color: #ECF0F1; /* Light neutral gray */
+    --background-color: #FFFFFF; /* Crisp white */
+    --text-color: #2C3E50; /* Charcoal gray */
+    --accent-color: #1ABC9C; /* Turquoise */
+    --hover-color: #16A085; /* Deep turquoise */
 }
 
 body {
@@ -108,7 +108,8 @@ section h2 {
 }
 
 .grid_item {
-    background-color: var(--accent-color);
+    background-image: linear-gradient(var(--accent-color),var(--hover-color));
+    /*background-color: var(--accent-color);*/
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -119,7 +120,7 @@ section h2 {
 }
 
 .grid_item:hover {
-    background-color: var(--hover-color);
+    background-image: linear-gradient(var(--hover-color), var(--hover-color));
     transform: scale(1.05);
 }
 
