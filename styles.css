@@ -19,6 +19,9 @@ body {
     color: var(--text-color);
 }
 
+.primary_color {
+    color: var(--hover-color);
+}
 
 .container {
     width: 90%;
